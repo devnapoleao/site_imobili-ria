@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.a {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2em;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: calc(100% - 2em);
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    padding: 0.75em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em;
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.imovel {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.imovel h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.slideshow-container-resultado {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+.mySlides {
+    display: none;
+    padding: 0px;
+}
+
+.active-slide {
+    display: block;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.linkCredito {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 1em;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .sugestoes-cidade {
+        background-color: white;
+        position: absolute;
+        border: 1px solid #ccc;
+        border-top: none;
+        z-index: 1000;
+        width: -webkit-fill-available;
+    }
+
+    .sugestoes-cidade div {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .sugestoes-cidade div:hover {
+        background-color: #f0f0f0;
+    }
+}
